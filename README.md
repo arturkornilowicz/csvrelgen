@@ -3,6 +3,8 @@ Read more about the MMLKG project at [MMLKG website](https://mmlkg.uwb.edu.pl).
 
 # Shell usage
 
+Build the project with `mvn clean package`.
+
 To use it `csvrelgen.sh` should be launched.
 
 Some configuration of `csvrelgen.sh` is required.
