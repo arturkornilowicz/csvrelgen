@@ -1,7 +1,9 @@
+# csvrelgen
+
 Generators of input files for the global graph.
 Read more about the MMLKG project at [MMLKG website](https://mmlkg.uwb.edu.pl).
 
-# Shell usage
+## Shell usage
 
 Build the project with `mvn clean package`.
 
@@ -9,11 +11,11 @@ To use it `csvrelgen.sh` should be launched.
 
 Some configuration of `csvrelgen.sh` is required.
 
-# Docker image
+## Docker usage
 
 You need to have Docker installed on your machine to be able to build and run the Docker image.
 
-## Build the Docker image
+1. Build the Docker image
 
 To build the Docker image, run the following command:
 
@@ -21,7 +23,7 @@ To build the Docker image, run the following command:
 docker build -t csvrelgen .
 ```
 
-## Run the Docker image
+2. Run the Docker image
 
 To run the Docker image, run the following command:
 
@@ -29,7 +31,8 @@ To run the Docker image, run the following command:
 docker run --rm -v <input_path>:/app/input -v <output_path>:/app/output csvrelgen <java_Xmx> <MMLLAR> <ESXFILES> <OUTDIR>
 ```
 
-Replace `<input_path>` with the path to your input directory, and `<output_path>` with the path to your output directory.
+Replace `<input_path>` with the path to your input directory, and `<output_path>` with the path to your output
+directory.
 
 ### Optional Arguments
 
