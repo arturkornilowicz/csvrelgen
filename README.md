@@ -1,8 +1,11 @@
 Generators of input files for the global graph.
+Read more about the MMLKG project at [MMLKG website](https://mmlkg.uwb.edu.pl).
 
-To use it "csvrelgen.sh" should be launched.
+# Shell usage
 
-Some configuration of "csvrelgen.sh" is required.
+To use it `csvrelgen.sh` should be launched.
+
+Some configuration of `csvrelgen.sh` is required.
 
 # Docker image
 
