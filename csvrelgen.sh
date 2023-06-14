@@ -1,6 +1,9 @@
 #!/bin/sh
-
-# CONFIG
+# csvrelgen script
+# 
+# Maintainer: Łukasz Szeremeta
+# Email: l.szeremeta.dev+mmlkg@gmail.com
+# https://github.com/lszeremeta
 
 # Check if we're inside Docker
 if [ -f /.dockerenv ]; then
@@ -17,6 +20,9 @@ else
     ESXFILES=/Users/artur/ESX/esx_files/esx_mml/
     OUTDIR=output
 fi
+
+# Create output directory if not exists
+if [ ! -d $OUTDIR ]; then mkdir $OUTDIR; fi
 
 stop() {
     if [ $? -ne 0 ]; then

@@ -2,6 +2,7 @@
 # 
 # Maintainer: Łukasz Szeremeta
 # Email: l.szeremeta.dev+mmlkg@gmail.com
+# https://github.com/lszeremeta
 #
 # Usage:
 # docker build -t csvrelgen .
