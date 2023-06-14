@@ -20,7 +20,7 @@ fi
 
 stop() {
     if [ $? -ne 0 ]; then
-        echo "Exiting due to error"
+        >&2 echo "Exiting due to error"
         exit 1
     fi
 
@@ -91,3 +91,5 @@ $LAUNCH notations $MMLLAR $ESXFILES $OUTDIR/modes_synonyms.csv "//Mode-Definitio
 stop
 
 $LAUNCH notations $MMLLAR $ESXFILES $OUTDIR/funcs_synonyms.csv "//Functor-Definition/InfixFunctor-Pattern | //Func-Synonym/InfixFunctor-Pattern | //Functor-Definition/CircumfixFunctor-Pattern | //Func-Synonym/CircumfixFunctor-Pattern" Func-Synonym
+
+stop
